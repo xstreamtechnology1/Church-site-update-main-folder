@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+   
+    margin: 0;
+    padding: 0;
+    max-width: fit-content;
+  }
+  
+  .sermon-carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 5px solid #FFD700;
+    background-color: #003366;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 0px;
+    margin-bottom: 2px;
+    border-bottom: none;
+    padding-bottom: 50px;
+   
+    
+    
+  }
+  
+  .sermon-carousel {
+    display: flex;
+    gap: 26px;
+    transition: transform 0.5s ease-in-out;
+    padding-right: 0px;
+    min-width: 0px;
+    
+   
+   
+    
+  }
+  
+  .sermon-slide {
+    background: #FFD700;
+    color: #003366;
+    border-radius: 10px;
+    padding: 15px;
+    flex: 0 0 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    height: 425px;
+    
+    
+    /*transform: translateX(-200%);*/
+  }
+  
+  .sermon-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .sermon-slide h3,
+  .sermon-slide h4 {
+    margin: 0;
+  }
+
+
+  .sermon-text-div h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    text-transform: uppercase;
+    margin: 0; /* Remove extra margin */
+     
+}
+
+#sermon-section{
+  margin-top: 2px; /* Space between carousel and about us */
+  margin-bottom: 2px;
+  background-color: #003366;
+}
+
+.sermon-prev, .sermon-next:hover{
+  background-color: red;
+}
+
+
+.message-header, h2{
+  color: #FFD700;
+  padding-top: 25px;
+}
+
+
+  
+  .sermon-slide audio {
+    margin-top: 0px;
+    width: 100%;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    background: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    
+  }
+  
+  .controls button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 768px) {
+    .sermon-slide {
+      flex: 0 0 100%;
+      height: 345px;
+    }
+
+    .sermon-carousel{
+      gap: 25px;
+      padding: 15px;
+      
+    }
+
+    .sermon-carousel-container{
+      max-width: 300px;
+      width: 100%;
+      
+      margin: 20px auto;
+      overflow: hidden;
+      border: 5px solid #FFD700;
+      background-color: #003366;
+      padding: 20px;
+      border-radius: 10px;
+      height:400px;
+      
+    }
+
+    .controls{
+      margin-top: 0px;
+    }
+    
+  }
+  
