@@ -189,6 +189,13 @@
         z-index: 10;
     }
 
+
+    .close-btn{
+        font-size: 1rem; /* Adjust button size for smaller screens */
+        top:200px;
+        font-size:1000px;
+    }
+
     .zoom-btn {
         padding: 8px; /* Reduce padding for zoom buttons */
         position: absolute;
